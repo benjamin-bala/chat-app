@@ -1,0 +1,104 @@
+*,*::before,*::after,*::placeholder{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    border: none; outline: none;
+    font-weight: normal;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+.Login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../Assets/chat-app-login-background.png)
+}
+aside,#form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+aside{
+    height: 90%;
+    width: 40%;
+    border-radius: 30px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px #333;
+}
+.container{
+    position: relative;
+    width: 50%;
+    height: 40%;
+    padding: 15px;
+}
+.company_name{
+    position: absolute;
+    top: -100px;
+    left: 45px;
+    color: rgba(30, 144, 255,.6);
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: monospace;
+}
+h1{
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+h1,a,h4{
+    text-align: center;
+}
+a:hover{
+    color: dodgerblue;
+}
+h4{
+    font-size: 1.15rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form__field{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+input,button{
+    background-color: white;
+    border: 1px solid rgba(30, 144, 255,0.6);    padding: 10px;
+    border-radius: 10px;
+}
+input{
+    height: 40px;
+    overflow: hidden;
+}
+input::placeholder{
+    color: #aaa;
+}
+.toggle_password{
+    position: absolute;
+    right: 15px;
+    top: 35%;
+    font-size: 0.8rem;
+    color: rgba(30, 144, 255,0.6);
+    cursor: pointer;
+    /* visibility: hidden; */
+}
+button{
+    cursor: pointer;
+    font-size: 0.9rem;
+    letter-spacing: 0.3rem;
+    transition: background-color 600ms ease-in-out;
+    transition: scale 500ms ease-in-out;
+    transform: scale(1);
+    background-color: rgba(30, 144, 255,0.6);
+    color: white;
+}
+button:hover{
+    color: rgba(30, 144, 255,0.6);
+    transform: scale(.98);
+    background-color: white;
+    font-weight: bolder;
+    border: 1px solid rgba(30, 144, 255,0.6);
+}
