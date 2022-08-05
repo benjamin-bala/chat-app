@@ -1,9 +1,10 @@
 import './App.css';
+import Message from './Components/Message/index';
 
 function App() {
   return (
     <div className='App'>
-      <h1>Welcome to react</h1>
+      <Message />
     </div>
   );
 }
